@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de Clientes</h1>
+        <p id="subtitulo">Complete suas informações</p><br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+            </div>
+
+            <div class="campo">
+                <label>Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+            </div>
+            
+            <div class="campo">
+                <label>Deseja receber nossas novidades?</label>
+                <label>
+                    <input type="radio" name="Sim" value="Sim">Sim
+                </label>
+                <label>
+                    <input type="radio" name="Não" value="Não">Não
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="Sexo">Sexo</label>
+                <select id="Sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label>Qual serviço voce deseja?</label><br><br>
+                <input type="checkbox" id="serviço1" name="serviço1" value="Escova Progressiva">
+                <label for="serviço1">Escova Progressiva</label><br>
+                <input type="checkbox" id="serviço2" name="serviço2" value="Tratamento Capilar">
+                <label for="serviço2">Tratamento Capilar</label><br>
+                <input type="checkbox" id="serviço3" name="serviço3" value="Escova Simples">
+                <label for="serviço3">Escova Simples</label><br>
+                <input type="checkbox" id="serviço4" name="serviço4" value="Manicure/Pedicure">
+                <label for="serviço4">Manicure/Pedicure</label><br>
+                <input type="checkbox" id="serviço5" name="serviço5" value="Maquiagem">
+                <label for="serviço5">Maquiagem</label><br>
+                <input type="checkbox" id="serviço6" name="serviço6" value="Maquiagem">
+                <label for="serviço6">Maquiagem</label><br>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Deixe aqui seu comentário</label>
+            <textarea row="6" style="width: 26em;" id="comentário" name="comentário"></textarea>
+        </div>
+
+        <button class="botão" type="submit">Concluido</button>
+
+    </form>
+
+</body>
+</html>
